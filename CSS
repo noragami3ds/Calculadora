@@ -1,0 +1,123 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Roboto:wght@300;700;900&display=swap');
+
+*{
+    font-family: 'Poppins';
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: cadetblue;
+
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    background-color: cadetblue;
+    width: 400px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 45px black;
+    
+}
+
+#butt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+#butt button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdbdb;
+    cursor: pointer;
+}
+
+.texte{
+    margin-bottom: 1rem;
+}
+
+#butt .number{
+    background-color: #f3f3f3;
+}
+
+#butt button:hover{
+    background-color: #f3f3f3;
+    border-color: #999;
+}
+
+.calc{
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+}
+
+#operations{
+    text-align: right;
+
+}
+
+#butt .equal{
+    grid-column: span 2;
+    background-color: #75a5cb;
+}
+
+#butt .equal:hover{
+    background-color: #3a91D8;
+}
+
+#previous-operation{
+    color: #2e2c2c;
+    padding: 0.7rem;
+    overflow-wrap: break-word;
+    min-height: 1.6rem;
+}
+
+#current-operation{
+    min-height: 1.6rem;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+.contatos{
+    display: flex;
+    position: absolute;top: 5%;left: 10%; transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+.butte{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.butte:hover{
+    font-size: 35px;
+}
+
